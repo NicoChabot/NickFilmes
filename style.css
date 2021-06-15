@@ -4,7 +4,7 @@
                  }
                  
                  #divBusca {
-                     background-color: #2F4F4F;
+                     background-color: #ffffff;
                      border: solid 1px;
                      border-radius: 15px;
                      width: 300px;
@@ -19,4 +19,8 @@
                      border: none;
                      height: 32px;
                      width: 260px;
+                 }
+                 
+                 .btnbusca {
+                     float: right
                  }
