@@ -22,5 +22,6 @@
                  }
                  
                  .btnbusca {
-                     float: right
+                     float: right;
+                     border-radius: 15px;
                  }
