@@ -1,0 +1,19 @@
+name: nickfilmes
+description: trabalho de Desenvolvimento de interface web (DIW).
+publish to: 'none'
+enviroment: 
+  sdk: ">2.7.0 <3.0.0"
+dependencis: :
+
+flutter: 
+  sdk: flutter
+dartz: ^0.9.2
+dio: ^3.0.10
+intl: ^0.16.1
+
+dev_dependencis: 
+flutter_test:
+sdk: flutter
+
+flutter: 
+use_material-design: true
