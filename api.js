@@ -29,15 +29,15 @@ function mostraFilmes() {
 
     for (let i = 0; i < data.results.length; i++) {
         let nomeFilme = data.results[i].title;
-        let sinopse = data.results[i].overview;
+        let resumo = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
 
         textoHTML += `<div class="card col-md-4">
             <img src="${imagem}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${nomeFilme}</h5>
-                <p class="card-text">${sinopse}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">${resumo}</p>
+                <a href="#" class="btn btn-primary">${nomeFilme}</a>
             </div>
         </div>`
     }
