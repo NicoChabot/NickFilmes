@@ -32,6 +32,8 @@ function mostrarfilmes() {
             </div>`;
             $('#listafilmes').html(codigoHTML);
 
+    document.getElementById('tela').innerHTML = textoHTML
+
         }
     });
     $(document).ready(function() {
@@ -49,6 +51,4 @@ function mostrarfilmes() {
         xhr.send();
     }
 
-
-    document.getElementById('tela').innerHTML = textoHTML
 }
