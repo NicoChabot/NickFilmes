@@ -21,7 +21,16 @@
                      width: 260px;
                  }
                  
-                 .btnbusca {
+                 #btnbusca {
                      float: right;
                      border-radius: 15px;
+                 }
+                 
+                 #tit_1 {
+                     color: rgb(217, 255, 0)
+                 }
+                 
+                 .but {
+                     color: red;
+                     display: block;
                  }
