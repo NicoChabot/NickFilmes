@@ -9,20 +9,21 @@
     <title>Nickfilmes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="api.js"></script>
+    <script src="api2.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body onload="mostrarfilmes()">
+<body onload="carregaFilmes ()">
     <section>
         <header>
             <nav id=" Menu ">
                 <ul>
-                    <a class="but " href="#Lancamentos ">
-                 Lançamentos
+                    <a class="but " href="#Series ">
+                 Series
             </a>
-                    <a class="but " href="#Avaliacoes ">
+                    <a class="but " href="#EC ">
                 Em cartaz
 
             <a class="but " href="pesquisa.htm ">
@@ -32,19 +33,20 @@
                 </ul>
             </nav>
 
-            <h1 id="tit_1" class="News ">
+            <h1 id="tit_1 " class="News ">
                 Nick Filmes
             </h1>
         </header>
     </section>
-    <div class="container-fluid">
-        <div class="row" id="tela">
+    <div class=" EC "> Em cartaz
+    </div>
+    <div class="container-fluid ">
+        <div class="row " id="tela ">
             <div class="card col-md-2 ">
                 <img src=" https://source.unsplash.com/random/200x300 " class="card-img-top " alt="... ">
                 <div class="card-body ">
                     <h5 class="card-title ">Card title</h5>
                     <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="# " class="btn btn-primary ">Go somewhere</a>
                 </div>
             </div>
             <div class="card col-md-2 ">
@@ -52,12 +54,36 @@
                 <div class="card-body ">
                     <h5 class="card-title ">Card title</h5>
                     <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="# " class="btn btn-primary ">Go somewhere</a>
                 </div>
             </div>
         </div>
     </div>
     <section>
+        <article>
+            <div class="Series " onload="carregaSeries()">
+                Series </div>
+            <div class="container-fluid ">
+                <div class="row " id="tela2 ">
+                    <div class="card col-md-2 ">
+                        <img src=" https://source.unsplash.com/random/200x300 " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Card title</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-2 ">
+                        <img src="https://source.unsplash.com/random/200x300 " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Card title</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+
         <footer>
             <p id="rodape ">Nicolás Melo Chabot 2020 DIW MEU PORTAL DE Filmes</p>
         </footer>
