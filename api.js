@@ -37,7 +37,6 @@ function exibeFilmes() {
             <div class="card-body">
                 <h5 class="card-title">${tituloBR}</h5>
                 <p class="card-text">${resumao}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>`
     }
