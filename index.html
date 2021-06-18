@@ -7,32 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nickfilmes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="api.js"></script>
-    <script src="api2.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body onload="carregaFilmes ()">
+<body onload="carregaFilmes()">
     <section>
         <header>
             <nav id=" Menu ">
                 <ul>
                     <a class="but " href="#Series ">
-                 Series
-            </a>
+                 Lançamentos</a>
                     <a class="but " href="#EC ">
-                Em cartaz
-
-            <a class="but " href="pesquisa.htm ">
+                Em carta</a>
+                    <a class="but " href="pesquisa.htm ">
                 Busca
                 </div>
             </a>
                 </ul>
+                <div id="divBusca">
+                    <input type="text" id="pesquisa"> <button class="btnbusca" onclick="pesquisaFilmes()"><img width="30" src="figuras/search3.png" id="btnBusca" alt="Buscar" /></button>
+                </div>
             </nav>
-
             <h1 id="tit_1 " class="News ">
                 Nick Filmes
             </h1>
@@ -41,7 +41,7 @@
     <div class=" EC "> Em cartaz
     </div>
     <div class="container-fluid ">
-        <div class="row " id="tela ">
+        <div class="row " id="tela">
             <div class="card col-md-2 ">
                 <img src=" https://source.unsplash.com/random/200x300 " class="card-img-top " alt="... ">
                 <div class="card-body ">
@@ -58,30 +58,62 @@
             </div>
         </div>
     </div>
-    <section>
-        <article>
-            <div class="Series " onload="carregaSeries()">
-                Series </div>
-            <div class="container-fluid ">
-                <div class="row " id="tela2 ">
-                    <div class="card col-md-2 ">
-                        <img src=" https://source.unsplash.com/random/200x300 " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h1 class="Lancamentos">Lançamentos</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card col-md-6 ">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe width="900 " height="315 " src="https://www.youtube.com/embed/AfHiUtxrmiY " title="Youtube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture "></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="Marvel">
+                                    Shang-Chi
+                                </h2>
+                                <p>Após um brincadeira em seu perfil em 2014, o ator Simu-Liu conseguiu o papel de Shang-Chi o primeiro heroi asiatico no MCU.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="900" height="315 " src="https://www.youtube.com/embed/anDtrp34xig " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>
+                                    Invocação do Mal 3
+                                </h3>
+                                <p>O terceiro filme da franquia Invocação do Mal recebeu seu trailer na ultima semana, o filme retrata o primeito assasino a usar possesão demoniaca como justificativa do crime.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="900 " height="315 " src="https://www.youtube.com/embed/t1m7zl8H-kE " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>
+                                    Space Jam 2 </h4>
+                                <p>Depois de Michael Jordan Le Bron James se junta aos luney toones num jogo de basquete contra adversarios intergaláticos. O filme trara diversas referncias ao universo cinematografico presente na warner. Referencias Scooby
+                                    Doo, Harry Potter, Corrida Maluca, Os Flisntons ja podem ser observadas no trailer.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="900" height="315" src="https://www.youtube.com/embed/Gm3o0bfGP3g " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="Marvel">
+                                    Black Widow
+                                </h5>
+                                <p>O ultimo filme da espiã russa integrante dos vingadores vai aos cinemas esse ano e encerra a historia de Natasha Romanof no MCU.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card col-md-2 ">
-                        <img src="https://source.unsplash.com/random/200x300 " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-        </article>
-    </section>
+        </div>
+    </div>
     <section>
 
         <footer>
