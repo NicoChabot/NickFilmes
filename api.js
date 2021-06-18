@@ -4,6 +4,10 @@ const IMG_PREFIX = 'https://image.tmdb.org/t/p/w500';
 let xhr;
 
 function mostrarfilmes() {
+    xhr = new XMLHttpRequest();
+    xhr.open('GET', TMDB_ENDPOINT + '/movie/popular' + '?api_key=' + APIKEY, true);
+    xhr.onload = exibeFilmes;
+    xhr.send();
     $.ajax({
         url: TMDB_ENDPOINT + '/movie/now_playing',
         data: {
